@@ -1,0 +1,14 @@
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+@function getGap($key) {
+    @return map-deep-get($grid, 'column', 'gap', $key) / 2;
+}
+
+@function getColumnName($key) {
+    @return map-deep-get($grid, 'column', 'name', $key);
+}

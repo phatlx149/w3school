@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/grid-system.css" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        background: orange;
+        text-align: center;
+      }
+
+      h1 {
+        padding: 100px 0;
+        color: #fff;
+        font-size: 20px;
+      }
+
+      .course-item {
+        background: lightcoral;
+      }
+
+      .category {
+        background: green;
+        text-align: left;
+      }
+
+      .category ul {
+        margin: 15px 0;
+        padding: 5px 0;
+        list-style-type: none;
+      }
+
+      .category li h1 {
+        padding: 15px 0;
+        padding-left: 15px;
+        color: #000;
+        background: lightgreen;
+      }
+
+      .content {
+        padding: 0 12px;
+      }
+
+      .my-column {
+        text-align: center;
+        min-height: 30vh;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid wide container">
+      <h1>GRID SYSTEM</h1>
+    </div>
+
+    <div class="content">
+      <div class="grid wide container">
+        <div class="row">
+          <div class="col-l-3 col-m-0 col-c-0">
+            <div class="category">
+              <ul>
+                <li><h1>HTML & CSS</h1></li>
+                <li><h1>JavaScript</h1></li>
+                <li><h1>PHP</h1></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-l-9 col-m-12 col-c-12">
+            <div class="row">
+              <div class="col-l-4 col-m-6 col-c-12">
+                <div class="course-item">
+                  <h1>Course 1</h1>
+                </div>
+              </div>
+              <div class="col-l-4 col-m-6 col-c-12">
+                <div class="course-item">
+                  <h1>Course 2</h1>
+                </div>
+              </div>
+              <div class="col-l-4 col-m-6 col-c-12">
+                <div class="course-item">
+                  <h1>Course 3</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid wide container">
+        <div class="row">
+          <div class="col-l-6 col-l-o-3 col-m-8 col-m-o-2 col-c-12">
+            <div class="my-column">
+              <h1>Column 1</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid wide container">
+        <div class="row">
+          <div class="col-l-3 col-l-o-6 col-m-4 col-m-o-2 col-c-12">
+            <div class="my-column">
+              <h1>Column 1</h1>
+            </div>
+          </div>
+          <div class="col-l-3 col-m-4 col-c-12">
+            <div class="my-column">
+              <h1>Column 2</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="grid wide container">
+        <div class="row no-gutter">
+          <div class="col-l-4 col-m-6 col-c-12">
+            <div class="my-column">
+              <h1>Column 1</h1>
+            </div>
+          </div>
+          <div class="col-l-4 col-m-6 col-c-12">
+            <div class="my-column">
+              <h1>Column 2</h1>
+            </div>
+          </div>
+          <div class="col-l-4 col-m-6 col-c-12">
+            <div class="my-column">
+              <h1>Column 3</h1>
+            </div>
+          </div>
+          <div class="col-l-4 col-m-6 col-c-12">
+            <div class="my-column">
+              <h1>Column 4</h1>
+            </div>
+          </div>
+          <div class="col-l-4 col-m-6 col-c-12">
+            <div class="my-column">
+              <h1>Column 5</h1>
+            </div>
+          </div>
+          <div class="col-l-4 col-m-6 col-c-12">
+            <div class="my-column">
+              <h1>Column 6</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

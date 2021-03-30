@@ -1,0 +1,28 @@
+@mixin column($key) {
+    $colName: getColumnName($key);
+
+    [class*='col-'] {
+        display: block;
+        padding-left: getGap($key) * 1px;
+        padding-right: getGap($key) * 1px;
+    }
+
+    @for $i from 0 through 12 {
+        @if ($i == 0) {
+            .col-#{$colName}-#{$i} {
+                display: none;
+            }
+        } @else {
+            .col-#{$colName}-#{$i} {
+                flex: 0 0 ($i * 100% / 12);
+                max-width: ($i * 100% / 12);
+            }
+        }
+    }
+
+    @for $i from 1 through 11 {
+        .col-#{$colName}-o-#{$i} {
+            margin-left: ($i * 100% / 12);
+        }
+    }
+}

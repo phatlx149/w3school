@@ -1,0 +1,34 @@
+$grid: (
+    wide: (
+        default: 1200,
+        m: (
+            width: 644,
+            min-width: 740,
+            max-width: 1023,
+        ),
+        l: (
+            width: 984,
+            min-width: 1024,
+            max-width: 1239,
+        ),
+    ),
+    column: (
+        max: 12,
+        gap: (
+            default: 8,
+            m: 16,
+            l: 24,
+        ),
+        name: (
+            default: c,
+            m: m,
+            l: l,
+        ),
+    ),
+    breakpoint: (
+        m: 740,
+        l: 1113,
+    ),
+);
+
+$colMax: map-deep-get($grid, 'column', 'max');
